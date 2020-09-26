@@ -13,7 +13,7 @@ function lobby_click() {
     })
     
     socket.on("other_move", (response) => {
-        if (response instanceof Object && response.move) {
+        if (response instanceof Object && typeof response.move === 'string') {
             UpdateState(response)
         }
     })
