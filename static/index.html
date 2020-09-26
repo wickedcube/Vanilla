@@ -1,0 +1,55 @@
+<HTML>
+    <head>
+        <title>Vanilla</title>
+        <link rel="stylesheet" type="text/css" href="static/styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+    </head>
+    <body>
+        <div id='RegisterContainer' style='display:block'>
+            <div id='RegisterTitle'>Register</div>
+            <input id='NameInput' type="text" placeholder="Enter your name"/>
+            <div id='SubmitNameBtn' onclick="lobby_click()">Enter Lobby</div>
+        </div>
+        <div id='Game' style='display:none'>
+            <div id='Player1Container'>
+                <div id = 'playerName' class='playerName'></div>
+                <div id = 'playerScore' class='playerScore'></div>
+                <div id = 'openCard' class='openCard'>
+                    <div class='card'></div>
+                </div>
+                <div id = 'cardStackContainer' class='cardStackContainer'>
+                    <div class='cardStack'>
+                        <div class='card'>W</div>
+                        <div class='card'>X</div>
+                        <div class='card'>R</div>
+                        <div class='card'>X</div>
+                        <div class='card'>R</div>
+                        <div class='card'>X</div>
+                        <div class='card'>R</div>
+                        <div class='card'>R</div>
+                        <div class='card'>X</div>
+                        <div class='card'>R</div>
+                    </div>
+                </div>
+            </div>
+            <div id='Player2Container'>
+                <div id = 'otherPlayerName' class='playerName'>vamsi</div>
+                <div id = 'otherPlayerScore' class='playerScore'>20</div>
+                <div id = 'otherOpenCard' class='openCard'>
+                    <div class='card'></div>
+                </div>
+                <div id = 'otherCardStackContainer' class='cardStackContainer'>
+                    <div class='cardStack'>
+                        <div class='card'>W</div>
+                        <div class='card'>X</div>
+                        <div class='card'>R</div>
+                        <div class='card'>X</div>
+                        <div class='card'>R</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src='static/index.js'></script>
+
+    </body>
+</HTML>
